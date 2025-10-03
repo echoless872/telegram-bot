@@ -21,7 +21,8 @@ from telegram.ext import (
 )
 
 # ================== CONFIG ==================
-BOT_TOKEN = "এখানে_আপনার_BOT_TOKEN_দিবেন"   # <<=== এখানে আপনার Telegram Bot API টোকেন দিন (হাইলাইট)
+import os
+BOT_TOKEN = os.getenv("8348921131:AAG0vvK9QRArrV7L5OUNbLx5xMhvfk-pl_E")   # <<=== এখানে আপনার Telegram Bot API টোকেন দিন (হাইলাইট)
 ADMIN_TELEGRAM_ID = None  # যদি শুধু এক ব্যক্তিই প্রোডাক্ট যোগ করবে, এখানে তাঁর Telegram ID দিন (int). না দিলে None (সবাই যোগ করতে পারবে)
 WHATSAPP_NUMBER = "01940212417"  # প্রদর্শনের জন্য নম্বর
 WHATSAPP_COUNTRY_PREFIX = "88"   # বাংলাদেশের জন্য 88, wa.me তৈরিতে ব্যবহার হবে
